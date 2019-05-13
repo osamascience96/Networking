@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="C6901C46-FE4E-4361-A017-95143FE36F4A" name="R2" poe="0" model="Router" settings="" system_mac="54-89-98-14-25-26" com_port="2001" bootmode="0" cx="526.000000" cy="141.000000" edit_left="553" edit_top="195">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="4D81FD48-3809-458a-957A-E67096CE5C44" name="R3" poe="0" model="Router" settings="" system_mac="54-89-98-52-2A-3D" com_port="2002" bootmode="0" cx="708.000000" cy="352.000000" edit_left="735" edit_top="406">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="65430D81-68C1-4676-92F3-A939958C42CA" name="R1" poe="0" model="Router" settings="" system_mac="54-89-98-05-2B-C5" com_port="2000" bootmode="0" cx="361.000000" cy="352.000000" edit_left="388" edit_top="406">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="65430D81-68C1-4676-92F3-A939958C42CA" destDeviceID="4D81FD48-3809-458a-957A-E67096CE5C44">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="431.183777" srcBoundRect_Y="379.000000" srcOffset_X="-17.000000" srcOffset_Y="11.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="691.816223" tarBoundRect_Y="379.000000" tarOffset_X="-30.000000" tarOffset_Y="13.000000" />
+        </line>
+        <line srcDeviceID="65430D81-68C1-4676-92F3-A939958C42CA" destDeviceID="C6901C46-FE4E-4361-A017-95143FE36F4A">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="414.601471" srcBoundRect_Y="344.982361" srcOffset_X="-55.000000" srcOffset_Y="-7.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="526.398560" tarBoundRect_Y="202.017639" tarOffset_X="-45.000000" tarOffset_Y="-20.000000" />
+        </line>
+        <line srcDeviceID="C6901C46-FE4E-4361-A017-95143FE36F4A" destDeviceID="4D81FD48-3809-458a-957A-E67096CE5C44">
+            <interfacePair lineName="Copper" srcIndex="4" srcBoundRectIsMoved="0" srcBoundRect_X="581.205566" srcBoundRect_Y="200.699890" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="4" tarBoundRectIsMoved="0" tarBoundRect_X="706.794434" tarBoundRect_Y="346.300110" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="513" top="402" right="585" bottom="419" content="10.0.13.0" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="380" top="267" right="452" bottom="284" content="10.0.12.0" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="262" top="362" right="341" bottom="394" content="LoopBack 0&#x0D;&#x0A; 10.0.1.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="658" top="255" right="730" bottom="272" content="10.0.23.0" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="505" top="105" right="584" bottom="137" content="Loopback 0&#x0D;&#x0A; 10.0.2.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="765" top="360" right="844" bottom="392" content="LoopBack 0&#x0D;&#x0A; 10.0.3.3" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
